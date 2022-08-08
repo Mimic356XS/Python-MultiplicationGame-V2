@@ -8,10 +8,10 @@ def main():
     from tqdm import tqdm # <-- you will also have to install the pakage "tqdm"
     import time
 
-    with tqdm(total=1000) as pbar: # <-- Loading bar
+    with tqdm(total=500) as pbar: # <-- Loading bar
         for i in range(10):
             time.sleep(0.1)
-            pbar.update(100)
+            pbar.update(50)
 
     print(f"{Fore.RED}{Style.DIM}-------------------------------------------------",
           f"{Fore.LIGHTGREEN_EX}{Style.DIM}Done Loading!")
